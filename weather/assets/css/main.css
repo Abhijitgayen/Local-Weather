@@ -23,7 +23,6 @@
 }
  body,html {
     display: flex;
-    min-height: calc(100vh - 0px);
     flex-direction: column;
     background-color: var(--background-color);
      /* background-image: url("https://source.unsplash.com/user/erondu/1600x900");  */
@@ -156,8 +155,8 @@ color:white;
       border-radius: 50%;
   }
   .location_details,.location_temp,.location_wind{
-      padding:1rem 0.3rem;
-      margin:12px;
+      padding:12px;
+      margin:5px;
       font-size: var(--mianfont);
       border-radius: 15px;
       /* border:2px solid silver; */
@@ -185,6 +184,9 @@ color:white;
   .copyright a{
     color: aqua;
     text-decoration: none;
+  }
+  .has-text-centered{
+    padding-right:5%;
   }
   /*for differnt device*/
   @media screen and (min-width: 945px) and (max-width:1245px){
@@ -221,7 +223,7 @@ color:white;
 .location_details{
   position: relative;
   right:50%;
-  top:40%;
+  top:30%;
   padding: 15px;
 }
 .location_temp{
@@ -232,7 +234,7 @@ color:white;
 .location_wind{
   position: relative;
   right:50%;
-  bottom:40%;
+  bottom:20%;
   padding: 15px;
 }  
  }
@@ -250,7 +252,7 @@ color:white;
       width: 100%;
     }
     .all_data{
-      /* background-color: red; */
+      height: 100vh;
       padding: 0;
       margin: 0;
     }
@@ -259,30 +261,37 @@ color:white;
       border: 5px solid rgb(125, 214, 230);
       margin: 55px;
       border-radius: 15px;
-      
-    }
-.all_deatis{
   z-index: -10;
    text-align: center;
-   justify-self: center;
    grid-template-columns: auto ;
+   /* background-color: red; */
+   height: 60vh;
+   display: flex;
+   justify-content: space-around;
 }
 .location_details{
+  width: 256px;
+  height: 256px;
   position: relative;
-  right:60%;
-  top:40%;
-  padding: 35px;
+  right:0%;
+  bottom:10%;
+  padding: 25px;
 }
 .location_temp{
+  width: 316px;
+  height: 316px;
   position: relative;
-  left:60%;
-  padding: 35px;
+  left:0%;
+  top:0%;
+  padding: 25px;
 }
 .location_wind{
+  width: 256px;
+  height: 256px;
   position: relative;
-  right:60%;
-  bottom:40%;
-  padding: 35px;
+  right:0%;
+  top:20%;
+  padding: 25px;
 }  
  }
 
